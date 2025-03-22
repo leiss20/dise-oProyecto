@@ -1,0 +1,88 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3a34, #2ea04c);
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .menu {
+            width: 60px;
+            background: #1e3a34;
+            color: white;
+            padding: 20px 0;
+            transition: width 0.3s;
+            overflow: hidden;
+            position: fixed;
+            height: 100%;
+        }
+        .menu:hover {
+            width: 200px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            padding: 15px;
+            cursor: pointer;
+            text-align: left;
+            white-space: nowrap;
+            transition: background 0.3s;
+        }
+        .menu li:hover {
+            background: #2ea04c;
+        }
+        .menu li i {
+            margin-right: 10px;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            padding-left: 60px;
+            width: 100%;
+        }
+        .container {
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .cancel {
+            background: #ccc;
+            color: #333;
+        }
+        .cancel:hover {
+            background: #999;
+        }
+        .confirm {
+            background: #2ea04c;
+            color: white;
+        }
+        .confirm:hover {
+            background: #1e3a34;
+        }
+  

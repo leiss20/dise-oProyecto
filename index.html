@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoRuta - Inicio de sesión</title>
+  <link rel="stylesheet" href="Css/in.css">
+  <link rel="icon" href="img/WhatsApp_Image_2025-03-15_at_9.32.51_AM-removebg-preview.ico" type="image/x-icon">
+  <script>
+    function ingresar(event) {
+        event.preventDefault(); // Evita el envío del formulario por defecto
+        window.location.href = 'principal.html'; // Redirige a index.html
+    }
+</script>
+</head>
+<body>
+  <div class="login-container">
+    <img src="img/WhatsApp_Image_2025-03-15_at_9.32.51_AM-removebg-preview.png" alt="Logo de EcoRuta" class="logo">
+    <h2>Inicio de sesión</h2>
+    <form id="login-form" onsubmit="ingresar(event)">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required placeholder="Ejemplo@dominio.com">
+      
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required placeholder="****">
+      
+      <button type="submit">Iniciar sesión</button>
+    </form>
+    <p class="register-text">¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+  </div>
+    <p id="error-message" style="color:red; display:none;">Correo o contraseña incorrectos.</p>
+  </div>
+</body>
+</html>
+

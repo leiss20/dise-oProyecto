@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/inicio.css">
+    <link rel="icon" href="img/WhatsApp_Image_2025-03-15_at_9.32.51_AM-removebg-preview.ico" type="image/x-icon">
+    <title>Cerrar Sesión</title>
+    
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="configuracion.html">⚙ Configuración</a></li>
+            <li><a href="ubicaciones.html">📍 Ubicaciones</a></li>
+            <li><a href="busqueda.html">🔍 Búsqueda</a></li>
+            <li><a href="cerrar-sesion.html">🚪 Cerrar Sesión</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>¿Seguro que deseas cerrar sesión?</h2>
+            <div class="buttons">
+                <button class="cancel" onclick="window.history.back()">Cancelar</button>
+                <button class="confirm" onclick="cerrarSesion()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cerrarSesion() {
+            document.querySelector('.container').innerHTML = '<h2>Has cerrado sesión correctamente.</h2><p>Redirigiendo...</p>';
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
